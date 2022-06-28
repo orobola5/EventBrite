@@ -22,7 +22,7 @@ function registerUser(){
     }
   
 }
-document.getElementsByClassName("register-input")[0].addEventListener("keyup",handleInput)
+document.getElementsByClassName("register-input")[0].addEventListener("input",handleInput)
 
 function createFormElements(){
    let fieldArray =["First Name","Last Name","Password"]
@@ -40,7 +40,7 @@ function createFormElements(){
 
 
             let input = document.createElement("input")
-            input.addEventListener("keyup",handleInput)
+            input.addEventListener("input",handleInput)
 
             input.setAttribute("id",fieldArray[index].split(" ").join("").toLowerCase())
             input.setAttribute("type",fieldArray[index].split(" ").join("").toLowerCase())

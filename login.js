@@ -2,17 +2,15 @@ let userInput={
     email: "",
     password:""
 }
- console.log(document)
 
-document.getElementById("email").addEventListener("keyup",(e)=>{
+document.getElementById("email").addEventListener("input",(e)=>{
     userInput[e.target.name]=e.target.value
     
 
 })
-document.getElementById("password").addEventListener("keyup",(e)=>{
+document.getElementById("password").addEventListener("input",(e)=>{
     userInput[e.target.name]=e.target.value
     
-
 })
 function clickHandler(){
     let{email,password} = userInput  
