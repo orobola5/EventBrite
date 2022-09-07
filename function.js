@@ -25,7 +25,7 @@ function dialCustomer(customer,caller){
     if(customer.nationality==="nigeria"){
         caller("+234",customer.phoneNumber)
     }else{
-        setTimeout(()=>caller("+233",customer.phoneNumber),3000)
+                setTimeout(()=>caller("+233",customer.phoneNumber),3000)
     }
 
 }
